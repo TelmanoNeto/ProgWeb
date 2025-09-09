@@ -1,4 +1,4 @@
-# ProgWeb
+# 🌐 ProgWeb
 
 This repository contains activities from the Web Programming course, covering HTML, CSS, JavaScript, and React.
 
