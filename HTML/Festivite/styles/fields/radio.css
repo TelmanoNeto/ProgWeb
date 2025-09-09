@@ -1,0 +1,133 @@
+
+.about-event {
+    border: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & h3 {
+    font: var(--text-heading-sm);
+    color: var(--text-heading);
+    }
+}
+
+.personalize {
+    border: none;
+}
+
+.color {
+    margin-bottom: 1.75rem;
+
+    & label {
+        display: block;
+        font: var(--text-body-md);
+        color: white;
+        margin-bottom: 1rem;
+    }
+}
+
+.radio-color {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cor {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--shape-button);
+    border-radius: 50%;
+    transition: outline 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.cor svg {
+    display: block;
+    align-self: center;
+    justify-self: center;
+    margin-top: 6px;
+}
+
+.cor input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cor:hover,
+.cor:has(input[type="radio"]:checked) {
+  outline: 2px solid #59B2FF;
+  outline-offset: 2px;
+}
+
+.cor:focus-within {
+  outline: 2px solid #59B2FF;
+  outline-offset: 2px;
+}
+
+.radio-theme {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 12px; 
+}
+
+.theme {  
+    & label {
+        display: block;
+        font: var(--text-body-md);
+        color: white;
+        margin-bottom: 1rem;
+    }
+}
+
+.temario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: var(--shape-button);
+}
+
+.temario:hover {
+    background-color: var(--shape-button-hover);
+    outline: 2px solid #59B2FF;
+}
+
+.temario img {
+  height: auto;
+  border-radius: 4px;
+}
+
+.temario input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.temario:has(input[type="radio"]:checked) {
+  outline: 2px solid #59B2FF; /* Mantendo seu estilo de seleção */
+  outline-offset: 2px;
+}
+
+.temario span {
+    display: inline-block;
+    justify-self: center;
+    font: var(--text-body-sm);
+    color: white; 
+    margin-top: 4px; 
+}

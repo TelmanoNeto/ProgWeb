@@ -1,0 +1,16 @@
+main {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-container {
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+    margin: 20px 20px 0 0;
+    padding: 80px 180px;
+
+        & h1 {
+        font: var(--text-heading-md);
+        color: var(--text-heading);
+    }
+}

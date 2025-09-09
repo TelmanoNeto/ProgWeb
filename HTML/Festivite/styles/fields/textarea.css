@@ -1,0 +1,10 @@
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    font: var(--text-body-md);
+    margin-bottom: 3rem;
+}
